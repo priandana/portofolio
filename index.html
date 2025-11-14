@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Priandana</title>
+  <meta name="description" content="Portofolio pribadi Priandana - Project, skill, dan kontak." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Icon -->
+  <link rel="icon" href="https://fav.farm/⭐">
+  <!-- Font (opsional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">Priandana<span>.</span></div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#skills">Skill</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Hire Me
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-tag">PORTOFOLIO • PERSONAL BRAND</p>
+        <h1>Hi, saya <span>Priandana</span></h1>
+        <p class="hero-subtitle">
+          <span id="hero-role">Digital Ops & Automation Enthusiast</span> yang suka
+          membangun sistem praktis: dari spreadsheet otomatis, dashboard interaktif,
+          sampai mini-web untuk workflow harian.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">Lihat Project</a>
+          <a href="#about" class="btn ghost">Tentang Saya</a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <strong>+3 Tahun</strong>
+            <span>pengalaman operasional & sistem</span>
+          </div>
+          <div>
+            <strong>+20</strong>
+            <span>template & tools internal</span>
+          </div>
+          <div>
+            <strong>+10</strong>
+            <span>brand yang pernah ditangani</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-avatar">
+          <div class="avatar-circle">P</div>
+        </div>
+        <div class="hero-card-body">
+          <h2>Siapa saya?</h2>
+          <p>
+            Orang yang senang menyederhanakan hal ribet: bikin sistem otomatis,
+            form rapi, dan visual yang enak dilihat tapi tetap fungsional.
+          </p>
+          <ul class="hero-pill-list">
+            <li>Spreadsheet Otomatis</li>
+            <li>Dashboard & Report</li>
+            <li>Mini Web Workflow</li>
+          </ul>
+          <a href="#contact" class="btn full">Kolaborasi Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <h2>Tentang Saya</h2>
+      <p>Profil singkat dan cara saya bekerja.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Ringkasan</h3>
+        <p>
+          Saya fokus di area <strong>operasional, sistem, dan otomasi</strong>.
+          Mulai dari merapikan proses gudang, QC, inbound–outbound, sampai
+          membuat tools sederhana yang bisa dipakai tim tanpa perlu ribet.
+        </p>
+        <p>
+          Saya percaya, alat yang bagus itu: <strong>mudah dipakai</strong>,
+          <strong>jelas fungsinya</strong>, dan <strong>konsisten tampilannya</strong>.
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>Cara Kerja</h3>
+        <ul class="checklist">
+          <li>Mulai dari memahami masalah di lapangan.</li>
+          <li>Bikin rancangan sistem yang simpel dulu.</li>
+          <li>Buat versi pertama → uji → perbaiki.</li>
+          <li>Dokumentasi singkat, supaya mudah diajarkan ke tim.</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h3>Fokus Utama</h3>
+        <ul class="pill-list">
+          <li>Gudang & Logistik</li>
+          <li>Quality Control (QC)</li>
+          <li>Form & Template Operasional</li>
+          <li>Gamifikasi Kinerja</li>
+          <li>Mini Dashboard</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILL -->
+  <section id="skills" class="section section-alt">
+    <div class="section-header">
+      <h2>Skill & Tools</h2>
+      <p>Hal-hal yang sering saya gunakan dalam pekerjaan.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Spreadsheet & Data</h3>
+        <ul>
+          <li>Google Sheets (otomasi & dashboard)</li>
+          <li>Microsoft Excel (formula & macro dasar)</li>
+          <li>Data validation & struktur sheet rapi</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Automation & Scripting</h3>
+        <ul>
+          <li>Google Apps Script (Web App sederhana)</li>
+          <li>Trigger otomatis (daily/weekly report)</li>
+          <li>Integrasi form & sheet</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Web & UI Sederhana</h3>
+        <ul>
+          <li>HTML & CSS dasar</li>
+          <li>Landing page simple untuk internal</li>
+          <li>Vercel + GitHub untuk hosting</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Operasional & QC</h3>
+        <ul>
+          <li>Template QC Instruction</li>
+          <li>Log inbound–outbound</li>
+          <li>Monitoring vendor & SLA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <h2>Project Pilihan</h2>
+      <p>Beberapa contoh sistem & tools yang pernah saya buat.</p>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-tag">Spreadsheet System</div>
+        <h3>Sistem Poin & Badge Karyawan</h3>
+        <p>
+          Sistem gamifikasi kinerja untuk karyawan gudang: hitung poin otomatis,
+          leaderboard, dan badge berdasarkan performa harian/bulanan.
+        </p>
+        <ul class="project-meta">
+          <li>Google Sheets</li>
+          <li>Apps Script</li>
+          <li>Dashboard</li>
+        </ul>
+        <a href="#" class="project-link">Lihat detail (placeholder)</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">Operational Template</div>
+        <h3>Template QC Instruction Pakaian</h3>
+        <p>
+          Dokumen QC terstandarisasi untuk berbagai jenis produk
+          (t-shirt, jaket, celana), lengkap dengan catatan dan kolom reject/lolos.
+        </p>
+        <ul class="project-meta">
+          <li>Word & Excel</li>
+          <li>Gudang & QC</li>
+        </ul>
+        <a href="#" class="project-link">Lihat detail (placeholder)</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">Mini Web</div>
+        <h3>Mini Dashboard Vercel</h3>
+        <p>
+          Web sederhana di Vercel untuk mengarahkan tim ke berbagai spreadsheet:
+          laporan harian, QC, inbound, dan monitoring vendor.
+        </p>
+        <ul class="project-meta">
+          <li>HTML/CSS</li>
+          <li>Vercel</li>
+          <li>GitHub</li>
+        </ul>
+        <a href="#" class="project-link">Lihat detail (placeholder)</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="section-header">
+      <h2>Kontak</h2>
+      <p>Siap berdiskusi soal sistem, operasional, atau kolaborasi project.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Hubungi Saya</h3>
+        <p>
+          Kamu bisa kirim pesan lewat email, WhatsApp, atau DM sosial media.
+          Saya usahakan fast response di jam kerja.
+        </p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:emailkamu@example.com">emailkamu@example.com</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/628xxxxx" target="_blank">+62 8xx-xxxx-xxxx</a></li>
+          <li><strong>Instagram:</strong> <a href="https://instagram.com/username" target="_blank">@username</a></li>
+        </ul>
+      </div>
+      <form class="contact-form" onsubmit="return openMailto(event)">
+        <label>Nama
+          <input type="text" id="name" placeholder="Nama kamu" required />
+        </label>
+        <label>Email
+          <input type="email" id="email" placeholder="email@contoh.com" required />
+        </label>
+        <label>Pesan
+          <textarea id="message" rows="4" placeholder="Ceritakan singkat kebutuhan kamu..." required></textarea>
+        </label>
+        <button type="submit" class="btn primary full">Kirim via Email</button>
+        <p class="contact-note">Form ini akan membuka aplikasi email kamu dengan isi otomatis.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Priandana • Dibuat dengan HTML, CSS, dan ❤️ lalu di-host di Vercel.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
