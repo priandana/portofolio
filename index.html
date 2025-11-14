@@ -3,262 +3,483 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio Priandana</title>
-  <meta name="description" content="Portofolio pribadi Priandana - Project, skill, dan kontak." />
+  <title>Priandana – Portfolio & Systems Builder</title>
+  <meta name="description" content="Portofolio profesional Priandana: sistem gudang, spreadsheet otomatis, dashboard, dan mini web internal." />
   <link rel="stylesheet" href="style.css" />
-  <!-- Icon -->
   <link rel="icon" href="https://fav.farm/⭐">
-  <!-- Font (opsional) -->
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- GLOBAL BACKGROUND DECOR -->
+  <div class="bg-orbit bg-orbit-1"></div>
+  <div class="bg-orbit bg-orbit-2"></div>
+  <div class="bg-orbit bg-orbit-3"></div>
+
   <!-- NAVBAR -->
   <header class="nav">
-    <div class="nav-inner">
-      <div class="nav-logo">Priandana<span>.</span></div>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
+    <div class="nav-container">
+      <div class="nav-left">
+        <div class="nav-logo">
+          <span class="nav-logo-mark">P</span>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">Priandana</span>
+            <span class="nav-logo-role">Ops & Systems Builder</span>
+          </div>
+        </div>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero">Home</a>
         <a href="#about">Tentang</a>
+        <a href="#experience">Pengalaman</a>
         <a href="#skills">Skill</a>
         <a href="#projects">Project</a>
         <a href="#contact">Kontak</a>
       </nav>
-      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-        Hire Me
-      </button>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+        <button class="btn btn-nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Hire Me
+        </button>
+        <button class="nav-burger" id="navBurger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <p class="hero-tag">PORTOFOLIO • PERSONAL BRAND</p>
-        <h1>Hi, saya <span>Priandana</span></h1>
-        <p class="hero-subtitle">
-          <span id="hero-role">Digital Ops & Automation Enthusiast</span> yang suka
-          membangun sistem praktis: dari spreadsheet otomatis, dashboard interaktif,
-          sampai mini-web untuk workflow harian.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">Lihat Project</a>
-          <a href="#about" class="btn ghost">Tentang Saya</a>
-        </div>
-        <div class="hero-meta">
-          <div>
-            <strong>+3 Tahun</strong>
-            <span>pengalaman operasional & sistem</span>
-          </div>
-          <div>
-            <strong>+20</strong>
-            <span>template & tools internal</span>
-          </div>
-          <div>
-            <strong>+10</strong>
-            <span>brand yang pernah ditangani</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <div class="hero-avatar">
-          <div class="avatar-circle">P</div>
-        </div>
-        <div class="hero-card-body">
-          <h2>Siapa saya?</h2>
-          <p>
-            Orang yang senang menyederhanakan hal ribet: bikin sistem otomatis,
-            form rapi, dan visual yang enak dilihat tapi tetap fungsional.
+  <main>
+    <section id="hero" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-left animate-up">
+          <p class="hero-chip">AVAILABLE FOR COLLAB • REMOTE / HYBRID</p>
+          <h1>
+            Bangun <span> sistem praktis</span><br />
+            untuk hal yang kelihatannya ribet.
+          </h1>
+          <p class="hero-subtitle">
+            Saya <strong>Priandana</strong>, fokus di <strong>operasional, QC, dan otomasi</strong>.
+            Saya membantu tim gudang & bisnis menyederhanakan proses
+            lewat spreadsheet pintar, dashboard, dan mini web internal.
           </p>
-          <ul class="hero-pill-list">
-            <li>Spreadsheet Otomatis</li>
-            <li>Dashboard & Report</li>
-            <li>Mini Web Workflow</li>
-          </ul>
-          <a href="#contact" class="btn full">Kolaborasi Sekarang</a>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Lihat Project Utama</a>
+            <a href="#about" class="btn btn-outline">Lihat Profil Singkat</a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="highlight">
+              <span class="highlight-value">3+ Tahun</span>
+              <span class="highlight-label">ngurus operasional & sistem</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-value">20+ Tools</span>
+              <span class="highlight-label">template kerja yang dipakai tim</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-value">10+ Brand</span>
+              <span class="highlight-label">pernah ditangani di gudang/logistik</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right animate-up-delayed">
+          <div class="profile-card">
+            <div class="profile-header">
+              <div class="profile-avatar">
+                <span>P</span>
+              </div>
+              <div>
+                <p class="profile-name">Priandana</p>
+                <p class="profile-title">Operations & Systems Builder</p>
+              </div>
+            </div>
+            <p class="profile-text">
+              Saya suka merapikan pekerjaan: bikin alur yang jelas, form yang enak diisi,
+              dan sistem yang bikin tim <strong>lebih tenang</strong> karena datanya rapi.
+            </p>
+            <ul class="profile-tags">
+              <li>Spreadsheet Otomatis</li>
+              <li>QC & Warehouse</li>
+              <li>Mini Dashboard Web</li>
+            </ul>
+            <div class="profile-status">
+              <span class="status-dot"></span>
+              <span class="status-text">Saat ini terbuka untuk freelance / project based</span>
+            </div>
+            <a href="#contact" class="btn btn-full btn-secondary">Diskusi Kebutuhan Sistem</a>
+          </div>
+
+          <div class="mini-stats">
+            <div class="mini-stat-card">
+              <span class="mini-stat-label">Strength utama</span>
+              <strong>Struktur & dokumentasi</strong>
+            </div>
+            <div class="mini-stat-card">
+              <span class="mini-stat-label">Cara kerja</span>
+              <strong>Praktis & bisa diajar ke tim</strong>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- TENTANG -->
-  <section id="about" class="section">
-    <div class="section-header">
-      <h2>Tentang Saya</h2>
-      <p>Profil singkat dan cara saya bekerja.</p>
-    </div>
-    <div class="about-grid">
-      <div class="about-card">
-        <h3>Ringkasan</h3>
-        <p>
-          Saya fokus di area <strong>operasional, sistem, dan otomasi</strong>.
-          Mulai dari merapikan proses gudang, QC, inbound–outbound, sampai
-          membuat tools sederhana yang bisa dipakai tim tanpa perlu ribet.
-        </p>
-        <p>
-          Saya percaya, alat yang bagus itu: <strong>mudah dipakai</strong>,
-          <strong>jelas fungsinya</strong>, dan <strong>konsisten tampilannya</strong>.
-        </p>
-      </div>
-      <div class="about-card">
-        <h3>Cara Kerja</h3>
-        <ul class="checklist">
-          <li>Mulai dari memahami masalah di lapangan.</li>
-          <li>Bikin rancangan sistem yang simpel dulu.</li>
-          <li>Buat versi pertama → uji → perbaiki.</li>
-          <li>Dokumentasi singkat, supaya mudah diajarkan ke tim.</li>
-        </ul>
-      </div>
-      <div class="about-card">
-        <h3>Fokus Utama</h3>
-        <ul class="pill-list">
-          <li>Gudang & Logistik</li>
-          <li>Quality Control (QC)</li>
-          <li>Form & Template Operasional</li>
-          <li>Gamifikasi Kinerja</li>
-          <li>Mini Dashboard</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Tentang</p>
+          <h2>Singkat tentang saya & cara saya kerja</h2>
+          <p class="section-subtitle">
+            Saya bukan hanya bikin file, tapi bikin <strong>sistem</strong> yang bisa dipakai
+            orang lain tanpa perlu dijelasin berjam-jam.
+          </p>
+        </header>
 
-  <!-- SKILL -->
-  <section id="skills" class="section section-alt">
-    <div class="section-header">
-      <h2>Skill & Tools</h2>
-      <p>Hal-hal yang sering saya gunakan dalam pekerjaan.</p>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Spreadsheet & Data</h3>
-        <ul>
-          <li>Google Sheets (otomasi & dashboard)</li>
-          <li>Microsoft Excel (formula & macro dasar)</li>
-          <li>Data validation & struktur sheet rapi</li>
-        </ul>
+        <div class="about-grid">
+          <article class="card animate-up">
+            <h3>Ringkasan Profil</h3>
+            <p>
+              Background saya kuat di <strong>operasional gudang/logistik</strong> dan
+              <strong>administrasi</strong>, lalu pelan-pelan berkembang ke
+              <strong>otomasi sistem</strong> memakai Google Sheets, Excel, dan
+              mini web sederhana.
+            </p>
+            <p>
+              Fokus saya: bikin alat internal yang
+              <strong>mudah dipakai</strong>, <strong>jelas alurnya</strong>,
+              dan <strong>mudah dilanjutkan tim lain</strong>.
+            </p>
+          </article>
+
+          <article class="card animate-up">
+            <h3>Cara Saya Membangun Sistem</h3>
+            <ul class="checklist">
+              <li>Mulai dari masalah nyata di lapangan, bukan dari fitur.</li>
+              <li>Bikin draft alur di kertas / mindmap / spreadsheet sederhana.</li>
+              <li>Buat versi 1 → tes dipakai tim → perbaiki yang bikin bingung.</li>
+              <li>Tambahkan dokumentasi singkat + contoh isi.</li>
+            </ul>
+          </article>
+
+          <article class="card animate-up">
+            <h3>Hal yang Saya Prioritaskan</h3>
+            <ul class="pill-list">
+              <li>Data rapi & konsisten</li>
+              <li>Form & input user-friendly</li>
+              <li>Automasi seperlunya saja</li>
+              <li>Desain bersih & jelas</li>
+              <li>Dokumentasi singkat</li>
+              <li>Maintenance mudah</li>
+            </ul>
+          </article>
+        </div>
       </div>
-      <div class="skill-card">
-        <h3>Automation & Scripting</h3>
-        <ul>
-          <li>Google Apps Script (Web App sederhana)</li>
-          <li>Trigger otomatis (daily/weekly report)</li>
-          <li>Integrasi form & sheet</li>
-        </ul>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Pengalaman</p>
+          <h2>Pengalaman relevan & fokus pekerjaan</h2>
+          <p class="section-subtitle">
+            Dari QC, inbound–outbound, sampai template sistem yang dipakai harian.
+          </p>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline-item animate-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">2022 – Sekarang</p>
+              <h3>Operasional & Sistem Internal</h3>
+              <p class="timeline-place">Perusahaan logistik / gudang fashion (multi-brand)</p>
+              <ul>
+                <li>Membangun berbagai <strong>spreadsheet operasional</strong> (inbound, outbound, QC, vendor).</li>
+                <li>Mendesain template <strong>QC Instruction</strong> untuk berbagai jenis produk.</li>
+                <li>Mengembangkan sistem poin & badge untuk <strong>gamifikasi kinerja karyawan</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item animate-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">2020 – 2022</p>
+              <h3>Admin & Support Operasional</h3>
+              <p class="timeline-place">Bisnis retail & online shop</p>
+              <ul>
+                <li>Mengelola laporan harian dalam Excel & Google Sheets.</li>
+                <li>Menyusun form input data agar meminimalisir error.</li>
+                <li>Pengenalan awal pada otomatisasi dengan Apps Script.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item animate-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">Sampingan</p>
+              <h3>Freelance – Template & Sistem</h3>
+              <p class="timeline-place">Personal / Side Project</p>
+              <ul>
+                <li>Membuat template spreadsheet custom untuk teman/kenalan.</li>
+                <li>Eksperimen mini web internal menggunakan Vercel.</li>
+                <li>Membantu merapikan alur kerja yang sebelumnya berantakan.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="skill-card">
-        <h3>Web & UI Sederhana</h3>
-        <ul>
-          <li>HTML & CSS dasar</li>
-          <li>Landing page simple untuk internal</li>
-          <li>Vercel + GitHub untuk hosting</li>
-        </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Skill</p>
+          <h2>Skill teknis & soft skill pendukung</h2>
+        </header>
+
+        <div class="skills-layout">
+          <div class="skills-main card animate-up">
+            <h3>Skill Teknis</h3>
+            <div class="skills-grid">
+              <div class="skill-block">
+                <p class="skill-title">Google Sheets & Excel</p>
+                <ul>
+                  <li>Formula menengah–lanjut (lookup, array, conditional)</li>
+                  <li>Data validation & proteksi sheet</li>
+                  <li>Dashboard & laporan ringkas</li>
+                </ul>
+              </div>
+              <div class="skill-block">
+                <p class="skill-title">Google Apps Script</p>
+                <ul>
+                  <li>Web App sederhana</li>
+                  <li>Trigger otomatis (daily / weekly)</li>
+                  <li>Integrasi form–sheet</li>
+                </ul>
+              </div>
+              <div class="skill-block">
+                <p class="skill-title">Web Basic</p>
+                <ul>
+                  <li>HTML & CSS dasar</li>
+                  <li>Static site di Vercel</li>
+                  <li>Landing page internal</li>
+                </ul>
+              </div>
+              <div class="skill-block">
+                <p class="skill-title">Operasional & QC</p>
+                <ul>
+                  <li>Flow inbound–outbound</li>
+                  <li>Template QC Instruction</li>
+                  <li>Monitoring vendor & SLA</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-side card animate-up">
+            <h3>Soft Skill & Cara Kerja</h3>
+            <ul class="checklist">
+              <li>Suka merapikan hal berantakan jadi terstruktur.</li>
+              <li>Komunikasi jelas dengan tim non-teknis.</li>
+              <li>Fokus ke solusi praktis, bukan solusi ribet.</li>
+              <li>Terbuka untuk revisi & iterasi bareng pengguna.</li>
+            </ul>
+            <div class="badge-callout">
+              <p class="badge-label">Jika harus dirangkum:</p>
+              <p class="badge-text">“Orang operasional yang hobi bikin sistem rapih.”</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="skill-card">
-        <h3>Operasional & QC</h3>
-        <ul>
-          <li>Template QC Instruction</li>
-          <li>Log inbound–outbound</li>
-          <li>Monitoring vendor & SLA</li>
-        </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Project</p>
+          <h2>Beberapa project & sistem yang pernah saya buat</h2>
+          <p class="section-subtitle">
+            Contoh konkret yang bisa dikembangkan lagi sesuai kebutuhan kamu.
+          </p>
+        </header>
+
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="spreadsheet">Spreadsheet</button>
+          <button class="filter-btn" data-filter="operational">Operasional</button>
+          <button class="filter-btn" data-filter="web">Web / Vercel</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card animate-up" data-type="spreadsheet operational">
+            <span class="project-tag">Gamifikasi • Spreadsheet</span>
+            <h3>Sistem Poin & Badge Karyawan Gudang</h3>
+            <p>
+              Sistem lengkap untuk menilai kinerja harian karyawan: poin otomatis
+              dari task, absensi, dan target, lalu dirangkum ke leaderboard dengan
+              badge (Bronze, Silver, Gold).
+            </p>
+            <ul class="project-meta">
+              <li>Google Sheets</li>
+              <li>Apps Script</li>
+              <li>Leaderboard</li>
+            </ul>
+            <p class="project-result">
+              Hasil: karyawan lebih <strong>termotivasi</strong>, atasan mudah melihat
+              siapa yang <strong>konsisten</strong>.
+            </p>
+          </article>
+
+          <article class="project-card animate-up" data-type="spreadsheet operational">
+            <span class="project-tag">QC • Operasional</span>
+            <h3>Template QC Instruction Pakaian & Celana</h3>
+            <p>
+              Dokumen QC standar untuk baju, jaket, celana panjang & pendek,
+              lengkap dengan panduan foto, kolom reject/lolos, dan catatan khusus.
+            </p>
+            <ul class="project-meta">
+              <li>Word & Excel</li>
+              <li>Gudang Fashion</li>
+            </ul>
+            <p class="project-result">
+              Hasil: proses QC lebih <strong>konsisten</strong> meskipun ganti orang.
+            </p>
+          </article>
+
+          <article class="project-card animate-up" data-type="spreadsheet operational">
+            <span class="project-tag">Vendor • Monitoring</span>
+            <h3>Monitoring Vendor: Telat & Selisih Qty</h3>
+            <p>
+              Spreadsheet untuk mencatat kedatangan vendor: jam datang vs cut off,
+              selisih kuantitas, dan catatan masalah. Lengkap dengan summary bulanan.
+            </p>
+            <ul class="project-meta">
+              <li>Google Sheets</li>
+              <li>Pivot & Summary</li>
+            </ul>
+            <p class="project-result">
+              Hasil: lebih mudah memonitor vendor yang sering bermasalah.
+            </p>
+          </article>
+
+          <article class="project-card animate-up" data-type="web spreadsheet">
+            <span class="project-tag">Mini Web • Vercel</span>
+            <h3>Mini Dashboard Link ke Spreadsheet</h3>
+            <p>
+              Website satu halaman berisi shortcut ke berbagai spreadsheet penting:
+              laporan harian, QC, vendor, inbound, outbound. Akses cepat untuk tim.
+            </p>
+            <ul class="project-meta">
+              <li>HTML/CSS/JS</li>
+              <li>Vercel</li>
+            </ul>
+            <p class="project-result">
+              Hasil: tim tinggal buka satu link untuk semua tools harian.
+            </p>
+          </article>
+
+          <article class="project-card animate-up" data-type="web">
+            <span class="project-tag">Brand • Portfolio</span>
+            <h3>Landing Page Portofolio Pribadi</h3>
+            <p>
+              Portofolio seperti halaman ini: menampilkan skill, pengalaman, dan
+              contoh sistem yang sudah dibuat, siap dikirim ke HR / klien.
+            </p>
+            <ul class="project-meta">
+              <li>Static Site</li>
+              <li>Vercel</li>
+            </ul>
+            <p class="project-result">
+              Hasil: personal brand yang <strong>lebih profesional</strong>.
+            </p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PROJECT -->
-  <section id="projects" class="section">
-    <div class="section-header">
-      <h2>Project Pilihan</h2>
-      <p>Beberapa contoh sistem & tools yang pernah saya buat.</p>
-    </div>
-    <div class="projects-grid">
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Kontak</p>
+          <h2>Yuk ngobrol soal sistem & operasional</h2>
+          <p class="section-subtitle">
+            Ceritakan dulu kondisi di lapangan, kita bisa diskusi pelan-pelan
+            untuk buat sistem yang pas.
+          </p>
+        </header>
 
-      <article class="project-card">
-        <div class="project-tag">Spreadsheet System</div>
-        <h3>Sistem Poin & Badge Karyawan</h3>
-        <p>
-          Sistem gamifikasi kinerja untuk karyawan gudang: hitung poin otomatis,
-          leaderboard, dan badge berdasarkan performa harian/bulanan.
-        </p>
-        <ul class="project-meta">
-          <li>Google Sheets</li>
-          <li>Apps Script</li>
-          <li>Dashboard</li>
-        </ul>
-        <a href="#" class="project-link">Lihat detail (placeholder)</a>
-      </article>
+        <div class="contact-grid">
+          <div class="card contact-info animate-up">
+            <h3>Info Kontak</h3>
+            <p>
+              Silakan hubungi saya lewat salah satu channel di bawah ini.
+              Untuk penjelasan lebih panjang, email biasanya paling enak.
+            </p>
+            <ul class="contact-list">
+              <li><span>📧</span> Email: <a href="mailto:emailkamu@example.com">emailkamu@example.com</a></li>
+              <li><span>💬</span> WhatsApp: <a href="https://wa.me/628xxxxx" target="_blank">+62 8xx-xxxx-xxxx</a></li>
+              <li><span>📷</span> Instagram: <a href="https://instagram.com/username" target="_blank">@username</a></li>
+              <li><span>💼</span> LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">/in/username</a></li>
+            </ul>
+            <div class="contact-note-box">
+              <p class="contact-note-title">Preferensi kerja:</p>
+              <p class="contact-note-text">
+                Project based, template sistem, atau perbaikan dari file yang sudah ada.
+              </p>
+            </div>
+          </div>
 
-      <article class="project-card">
-        <div class="project-tag">Operational Template</div>
-        <h3>Template QC Instruction Pakaian</h3>
-        <p>
-          Dokumen QC terstandarisasi untuk berbagai jenis produk
-          (t-shirt, jaket, celana), lengkap dengan catatan dan kolom reject/lolos.
-        </p>
-        <ul class="project-meta">
-          <li>Word & Excel</li>
-          <li>Gudang & QC</li>
-        </ul>
-        <a href="#" class="project-link">Lihat detail (placeholder)</a>
-      </article>
+          <form class="card contact-form animate-up" onsubmit="return openMailForm(event)">
+            <h3>Form singkat</h3>
+            <p class="contact-form-subtitle">
+              Form ini akan membuka aplikasi email dengan isi otomatis.
+            </p>
 
-      <article class="project-card">
-        <div class="project-tag">Mini Web</div>
-        <h3>Mini Dashboard Vercel</h3>
-        <p>
-          Web sederhana di Vercel untuk mengarahkan tim ke berbagai spreadsheet:
-          laporan harian, QC, inbound, dan monitoring vendor.
-        </p>
-        <ul class="project-meta">
-          <li>HTML/CSS</li>
-          <li>Vercel</li>
-          <li>GitHub</li>
-        </ul>
-        <a href="#" class="project-link">Lihat detail (placeholder)</a>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section section-alt">
-    <div class="section-header">
-      <h2>Kontak</h2>
-      <p>Siap berdiskusi soal sistem, operasional, atau kolaborasi project.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3>Hubungi Saya</h3>
-        <p>
-          Kamu bisa kirim pesan lewat email, WhatsApp, atau DM sosial media.
-          Saya usahakan fast response di jam kerja.
-        </p>
-        <ul class="contact-list">
-          <li><strong>Email:</strong> <a href="mailto:emailkamu@example.com">emailkamu@example.com</a></li>
-          <li><strong>WhatsApp:</strong> <a href="https://wa.me/628xxxxx" target="_blank">+62 8xx-xxxx-xxxx</a></li>
-          <li><strong>Instagram:</strong> <a href="https://instagram.com/username" target="_blank">@username</a></li>
-        </ul>
+            <label>
+              Nama
+              <input type="text" id="formName" placeholder="Nama kamu" required>
+            </label>
+            <label>
+              Peran / Posisi
+              <input type="text" id="formRole" placeholder="Owner, HR, Supervisor Gudang, dll" required>
+            </label>
+            <label>
+              Email
+              <input type="email" id="formEmail" placeholder="email@contoh.com" required>
+            </label>
+            <label>
+              Kebutuhan Utama
+              <textarea id="formNeed" rows="4" placeholder="Contoh: butuh sistem untuk memantau kinerja karyawan gudang dan QC..." required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-full">Kirim via Email</button>
+          </form>
+        </div>
       </div>
-      <form class="contact-form" onsubmit="return openMailto(event)">
-        <label>Nama
-          <input type="text" id="name" placeholder="Nama kamu" required />
-        </label>
-        <label>Email
-          <input type="email" id="email" placeholder="email@contoh.com" required />
-        </label>
-        <label>Pesan
-          <textarea id="message" rows="4" placeholder="Ceritakan singkat kebutuhan kamu..." required></textarea>
-        </label>
-        <button type="submit" class="btn primary full">Kirim via Email</button>
-        <p class="contact-note">Form ini akan membuka aplikasi email kamu dengan isi otomatis.</p>
-      </form>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© <span id="year"></span> Priandana • Dibuat dengan HTML, CSS, dan ❤️ lalu di-host di Vercel.</p>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Priandana. Dibangun dengan HTML, CSS, & JS, lalu di-host di Vercel.</p>
+      <p class="footer-secondary">Versi portofolio PRO • Siap disesuaikan dengan project & pengalaman terbaru.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
